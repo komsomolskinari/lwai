@@ -54,12 +54,12 @@
 				<script><xsl:value-of select="document('index.js.xml')"/></script>
 			</head>
 			<body>
-				<h1>Index of <xsl:value-of select="$path"/>
+				<h1>Index of <span id="path"><xsl:value-of select="$path"/></span>
 				</h1>
 				<table>
 					<thead>
 						<tr>
-							<th>Name</th>
+							<th class="selected">Name</th>
 							<th>Last Modified</th>
 							<th>Size</th>
 						</tr>
@@ -73,7 +73,7 @@
 						<xsl:apply-templates />
 					</tbody>
 				</table>
-				<p><xsl:value-of select="count(//directory)"/> directories, <xsl:value-of select="count(//file)"/> files, <span><xsl:call-template name="size"><xsl:with-param name="bytes" select="sum(//file/@size)" /></xsl:call-template></span> total</p>
+				<p><xsl:value-of select="count(//directory)"/> directories, <xsl:value-of select="count(//file)"/> files, <span id="sumsize"><xsl:call-template name="size"><xsl:with-param name="bytes" select="sum(//file/@size)" /></xsl:call-template></span> total</p>
 				<p>Powerded by NGINX with lwai</p>
 			</body>
 		</html>
