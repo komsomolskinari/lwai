@@ -1,0 +1,20 @@
+{
+  "name": "lwai",
+  "version": "0.5.0",
+  "description": "Lightweight Autoindex enchance for NGINX",
+  "main": "dist/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Student Main",
+  "license": "0BSD",
+  "devDependencies": {
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.2",
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5"
+  }
+}
