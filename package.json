@@ -7,11 +7,18 @@
     "test": "test"
   },
   "scripts": {
+    "build": "python3 build.py",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Student Main",
   "license": "0BSD",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.11.0",
+    "@typescript-eslint/parser": "^1.11.0",
+    "eslint": "^6.0.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.18.2",
     "ts-loader": "^6.0.4",
     "typescript": "^3.5.2",
     "webpack": "^4.35.2",

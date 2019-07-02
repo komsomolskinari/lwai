@@ -64,14 +64,6 @@
 							<th>Size</th>
 						</tr>
 					</thead>
-					<tfoot>
-						<tr>
-							<td colspan="3">
-								<xsl:value-of select="count(//directory)"/> directories,<xsl:value-of select="count(//file)"/> files,<xsl:call-template name="size">
-									<xsl:with-param name="bytes" select="sum(//file/@size)" />
-								</xsl:call-template> total</td>
-						</tr>
-					</tfoot>
 					<tbody>
 						<tr>
 							<td><a href="../">../</a></td>
@@ -81,7 +73,8 @@
 						<xsl:apply-templates />
 					</tbody>
 				</table>
-				<p>Powerded by NGINX, 计算机科学救不了中国人</p>
+				<p><xsl:value-of select="count(//directory)"/> directories,<xsl:value-of select="count(//file)"/> files,<xsl:call-template name="size"><xsl:with-param name="bytes" select="sum(//file/@size)" /></xsl:call-template> total</p>
+				<p>Powerded by NGINX with lwai</p>
 			</body>
 		</html>
 	</xsl:template>
