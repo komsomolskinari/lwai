@@ -1,5 +1,31 @@
 table {
 	width: 100%;
+	border-collapse: collapse;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+thead {
+	border-bottom: 1px solid black;
+}
+
+tbody > tr:nth-child(2n + 1) {
+	background-color: #ccc;
+}
+
+tr > td:first-child {
+	width: 70%;
+	padding-left: 1em;
+}
+
+tr > td:nth-child(2) {
+	text-align: center;
+}
+
+tr > td:last-child {
+	width: 5%;
+	text-align: right;
+	padding-right: 1em;
 }
 
 p {

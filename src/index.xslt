@@ -73,7 +73,7 @@
 						<xsl:apply-templates />
 					</tbody>
 				</table>
-				<p><xsl:value-of select="count(//directory)"/> directories,<xsl:value-of select="count(//file)"/> files,<xsl:call-template name="size"><xsl:with-param name="bytes" select="sum(//file/@size)" /></xsl:call-template> total</p>
+				<p><xsl:value-of select="count(//directory)"/> directories, <xsl:value-of select="count(//file)"/> files, <span><xsl:call-template name="size"><xsl:with-param name="bytes" select="sum(//file/@size)" /></xsl:call-template></span> total</p>
 				<p>Powerded by NGINX with lwai</p>
 			</body>
 		</html>
