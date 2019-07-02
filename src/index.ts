@@ -27,7 +27,6 @@ function sortAndDraw(by: EntrySortKey): void {
 	lastSortBy = by;
 	entries.sort(Entry.Sorter(by, reverse));
 	drawContent();
-	console.trace(reverse);
 }
 
 function pathExpander(path: string): string {
@@ -43,7 +42,6 @@ function pathExpander(path: string): string {
 		urls.push(`<a href="${url}">${c}</a>`);
 		return url;
 	}, '');
-	console.log(urls);
 	return urls.join('');
 }
 
