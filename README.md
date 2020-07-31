@@ -11,25 +11,25 @@ Lightweight autoindex for nginx
 
 ## Goal
 
-- [] Preview
-    - [] image
-        - [] webp (ondemand optional)
-        - [] tiff (?)
-    - [] audio
-        - [] midi (?)
-    - [] video
-    - [] text
-        - [] source highlighting (lib optional)
-        - [] markdown (lib? optional)
-        - [] csv (lib? optional)
-    - [] html
-        - [] pdf (?)
-        - [] office (?)
+- [ ] Preview
+    - [ ] image
+        - [ ] webp (ondemand optional)
+        - [ ] tiff (?)
+    - [ ] audio
+        - [ ] midi (?)
+    - [ ] video
+    - [ ] text
+        - [ ] source highlighting (lib optional)
+        - [ ] markdown (lib? optional)
+        - [ ] csv (lib? optional)
+    - [ ] html
+        - [ ] pdf (?)
+        - [ ] office (?)
 
 - [x] Table sort (IE11+?)
 - [x] Click path to jump
-- [] Icon (grab from VSCode? )
-- [] Large icon / image preview mode (?)
+- [ ] Icon (grab from VSCode? )
+- [ ] Large icon / image preview mode (?)
 
-- [] LocalStorage based history (?)
-- [] Darkmode (?)
+- [ ] LocalStorage based history (?)
+- [ ] Darkmode (?)
